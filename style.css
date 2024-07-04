@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.mg20 {
+    margin: 20px 0 20px 0;
+}
+
+.pd10 {
+    padding: 10px 0 10px 0;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.titlestyle {
+    font-family: "Pacifico", cursive;
+}
+
+
+.about-container {
+    width: 100%;
+    background-color: #ADBBDA;
+}
+
+.pdiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #ebe7e7;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    animation: moveShadow 5s infinite linear;
+}
+
+@keyframes moveShadow {
+    0% {
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.3), inset 5px 5px 10px rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    }
+}
+
+#personphoto {
+    width: 250px;
+    height: 200px;
+    border-radius: 25%;
+    background-color: rgb(199, 191, 191);
+}
+
+#educations {
+    width: 100%;
+    background-color: #cfccbc;
+}
+
+.educations-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.educations-section>.card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.educations-section>.col-6 {
+    width: 100%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.educations-section>.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.educations-section>.card {
+    width: 100%;
+    max-width: 540px;
+    background-color: #ebe7e7;
+}
+
+#workexperiences {
+    width: 100%;
+    background-color: #D0D9D4;
+}
+
+#skills {
+    display: flex;
+    width: 100%;
+    background-color: #a0d1d1;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoskill {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.skillsize {
+    width: 120px;
+    height: 80px;
+}
+
+
+#projects {
+    width: 100%;
+    background-color: #b7eca7;
+}
+
+#projects img {
+    height: auto;
+    object-fit: cover;
+}
+
+.coursesprogress .card {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+#coursesprogress {
+    width: 100%;
+    background-color: #b0a9cc;
+    display: grid;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    background-color: #d1d1d1;
+    text-align: center;
+}

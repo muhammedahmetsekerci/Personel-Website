@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- FONT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="path_to_your_favicon.ico" type="image/x-icon">
+    <title>MAS Personel Website</title>
+
+</head>
+
+<style>
+    .workexperiences {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .workexperiences .card {
+        margin: 10px;
+    }
+
+    .socialmedia {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .navbar-container {
+        background-color: #1a628b;
+        width: 100%;
+        height: auto;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+    }
+
+    #menu a {
+        color: rgb(243, 243, 243);
+        text-decoration: none;
+        font-family: "Roboto Slab", serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #menu a:hover {
+        color: rgba(0, 0, 0, 0.559);
+        font-weight: bold;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+
+    @media (max-width: 812px) {
+
+        #menu {
+            display: none;
+        }
+
+        .navbar-container a {
+            width: 100%;
+            text-align: center;
+        }
+
+        .dropdown {
+            display: block;
+            padding: 10px;
+            z-index: 1;
+        }
+    }
+
+    @media (min-width: 750px) {
+        .workexperiences {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 0px;
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 650px) {
+        .socialmedia {
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .col-6 {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <!--MENU-->
+    <header>
+        <div class="navbar-container">
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    MENU
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a href="index.html" class="btn text-start">Home-Page</a></li>
+                    <li><a href="#about" class="btn text-start">About</a></li>
+                    <li><a href="#educations" class="btn text-start">Educational-Background</a>
+                    </li>
+                    <li><a href="#workexperiences" class="btn text-start">Work-Experiences</a></li>
+                    <li><a href="#skills" class="btn text-start">Skills</a></li>
+                    <li><a href="#projects" class="btn text-start">Projects</a></li>
+                    <li><a href="#coursesprogress" class="btn text-start">Courses-in-Progress</a>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <div id="menu">
+
+                    <a href="index.html">Home-Page</a>
+                    <a href="#about">About</a>
+                    <a href="#educations">Educational-Background</a>
+                    <a href="#workexperiences">Work-Experiences</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#coursesprogress">Courses-in-Progress</a>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <!--ABOUT-->
+    <section id="about" style="width: 100%; margin-bottom: 20px; margin-top: 10px;">
+        <div class="about-container center">
+            <h1 class="center titlestyle pd10 m-0">ABOUT ME</h1>
+            <div class="pd10">
+                <img id="personphoto" src="./img/About/personphoto.jpg" alt="Person Photo">
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <div class="pdiv center pd10">
+                    <p style="margin: 0; padding-left: 5px; padding-right: 5px;">
+                        My name is Muhammed Ahmet Sekerci. I am 25 years old.<br>
+                        I graduated from Kutahya Dumlupinar University with a degree in Computer Engineering.<br>
+                        I am interested in database programming, programming languages, and game development.
+                    </p>
+                </div>
+            </div>
+            <div class=" pd10">
+                <button class="btn btn-light"><a target="_blank" style="text-decoration: none; color: black;"
+                        href="https://drive.google.com/file/d/1vhsZCRdCbtD9az7tvqbCMQ4LUOS151dp/view?usp=sharing"><b>CV</b></a></button>
+                <button class="btn btn-light"><a target="_blank" style="text-decoration: none; color: black;"
+                        href="mailto:muhammedahmetsekerci@gmail.com"><b>CONTACT ME</b></a></button>
+                </a>
+            </div>
+            <div class="center socialmedia pd10">
+                <div id="linkedn">
+                    <a href="https://www.linkedin.com/in/mahmetsekerci/" target="_blank"><img
+                            src="./img/About/LI-Logo.png" alt="Social Media 1 Linkedn logo" width="90px"></a>
+                </div>
+                <div id="hackerrank">
+                    <a href="https://www.hackerrank.com/MAhmetSekerci" target="_blank"><img
+                            src="./img/About/hackerranklogo.png" alt="Social Media 2 Hackerrank logo" width="130px"></a>
+                </div>
+                <div id="github">
+                    <a href="https://github.com/muhammedahmetsekerci" target="_blank"><img src="./img/About/github.png"
+                            alt="Social Media 3 Github logo" width="110px"></a>
+                </div>
+                <div id="leetcode">
+                    <a href="https://leetcode.com/u/muhammedahmetsekerci/" target="_blank"><img
+                            src="./img/About/leetcodelogo.png" alt="Social Media 4 Leetcodes logo" width="100px"></a>
+                </div>
+                <div id="youtube">
+                    <a href="https://www.youtube.com/@mas124" target="_blank"><img src="./img/About/youtubelogo.png"
+                            alt="Social Media 5 Youtube logo" width="90px"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--EDUCATIONAL BACKGROUND-->
+    <section id="educations" class="mg20">
+        <h1 class="center pd10 titlestyle m-0">EDUCATIONAL BACKGROUND</h1>
+        <div class="educations-section">
+            <div class="card">
+                <div class="row g-0 align-items-center">
+                    <div class="col-6 center">
+                        <img src="./img/Schools/dpu.png" alt="School 1 Kutahya Dumlupinar University logo">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Kutahya Dumlupinar University</h5>
+                            <p class="card-text">Computer Engineering<br>October 2020 - June 2024</p>
+                            <p class="card-text"><small class="text-body-secondary"><a href="https://www.dpu.edu.tr/"
+                                        target="_blank">Website</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="row g-0 align-items-center">
+                    <div class="col-6 center">
+                        <img src="./img/Schools/yalova.png"
+                            alt="School 2 Yalova University Vocational High School logo">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Yalova University <br> Vocational High School</h5>
+                            <p class="card-text">Computer Programming<br>October 2017 - November 2019</p>
+                            <p class="card-text"><small class="text-body-secondary"><a
+                                        href="https://yalovamyo.yalova.edu.tr/" target="_blank">Website</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="row g-0 align-items-center">
+                    <div class="col-6 center">
+                        <img src="./img/Schools/coskunoz.png" alt="School 3 M.Kemal Coskunoz logo">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                            <h5 class="card-title">M.Kemal Coskunoz MTAL</h5>
+                            <p class="card-text">Database Programming<br>October 2013 - June 2017</p>
+                            <p class="card-text"><small class="text-body-secondary"><a
+                                        href="https://coskunoz.meb.k12.tr/" target="_blank">Website</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--WORK EXPERIENCES-->
+    <section id="workexperiences" class="mg20">
+        <h1 class="center  pd10 titlestyle m-0">WORK EXPERIENCES</h1>
+        <div class="workexperiences conteiner m-0">
+            <div class="card border-light mb-3" style="max-width: 18rem; min-width: 14rem;">
+                <div class=" card-header"><b>Durmazlar Company</b></div>
+                <div class="card-body">
+                    <h5 class="card-title">Intern</h5>
+                    <p class="card-text">February 2019 - July 2019</p>
+                </div>
+            </div>
+            <div class="card border-light mb-3" style="max-width: 18rem;  min-width: 14rem;">
+                <div class=" card-header"><b>Tugra Informatics</b></div>
+                <div class="card-body">
+                    <h5 class="card-title">Intern</h5>
+                    <p class="card-text">June 2018 - July 2018</p>
+                </div>
+            </div>
+            <div class="card border-light mb-3" style="max-width: 18rem;  min-width: 14rem;">
+                <div class="card-header"><b>Ay-ta Computer</b></div>
+                <div class="card-body">
+                    <h5 class="card-title">Intern</h5>
+                    <p class="card-text">October 2016 - June 2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SKILLS-->
+    <section class=" mg20 center" id="skills">
+        <div class="skills-container">
+            <h1 class="center pd10 titlestyle m-0">SKILLS</h1>
+            <div class="row justify-content-center row-cols-10 pd10" style="margin-left: 5px; margin-right: 5px;">
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/premierelogo.png" alt="Skill 1 Adobe Premiere logo">
+                    <h6>PREMIERE</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/photoshoplogo.png" alt="Skill 2 Adobe Photoshop logo">
+                    <h6>PHOTOSHOP</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/HTML.png" alt="Skill 3 HTML logo">
+                    <h6>HTML</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/css.png" alt="Skill 4 CSS logo">
+                    <h6>CSS</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/SQL.png" alt="Skill 5 SQL logo">
+                    <h6>MSSQL</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/unity.png" alt="Skill 6 Unity logo">
+                    <h6>UNITY</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/CSHARP.png" alt="Skill 7 C Sharp logo">
+                    <h6>C#</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/linux.png" alt="Skill 8 Linux logo">
+                    <h6>LINUX</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/git.png" alt="Skill 9 Git logo">
+                    <h6>GIT</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/python.png" alt="Skill 10 Python logo">
+                    <h6>PYTHON</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/C.png" alt="Skill 11 C logo">
+                    <h6>C</h6>
+                </div>
+                <div class="skillsize">
+                    <img class="logoskill" src="./img/Skills/vscodelogo.png" alt="Skill 12 Visual Studio Code logo">
+                    <h6>VS Code</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+            <h1 class="center titlestyle m-0" style="padding-top: 20px;">PROJECTS</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-lg-3 g-4 pd10"
+                        style="margin: 0 10px 0 10px; padding-bottom: 10px;">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/Projects/cs50.png" class="card-img-top"
+                                    alt="Project 1 CS50 SQL Linux SQlite photo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">CS50 SQL FINAL PROJECT</h5>
+                                    <p class="card-text text-center">CS50's Introduction to Databases with SQL Final
+                                        Project</p>
+                                    <p class="card-text text-center"><a
+                                            href="https://github.com/muhammedahmetsekerci/CS50-SQL-FINAL-PROJECT"
+                                            target="_blank">Github
+                                            Link</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/Projects/gamephoto.png" class="card-img-top"
+                                    alt="Project 2 Delivery Driver Game photo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">DELIVERY DRIVER</h5>
+                                    <p class="card-text text-center">2d Unity Game Project.</p>
+                                    <p class="card-text text-center">
+                                        <a href="https://github.com/muhammedahmetsekerci/DeliveryDriver"
+                                            target="_blank">Github Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/Projects/form.png" class="card-img-top"
+                                    alt="Project 3 Survey Form photo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">SURVEY FORM</h5>
+                                    <p class="card-text text-center">Freecodecamp Survey Form Project.</p>
+                                    <p class="card-text text-center">
+                                        <a href="https://codepen.io/Muhammed-Ahmet-ekerci/pen/PogpWqd"
+                                            target="_blank">Codepen Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-lg-3 g-4 pd10" style="margin: 0 10px 0 10px;">
+                        <div class=" col">
+                            <div class="card h-100">
+                                <img src="./img/Projects/dogproject.png" class="card-img-top"
+                                    alt="Project 4 Tindog Website photo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">TINDOG PROJECT</h5>
+                                    <p class="card-text text-center">Web Course Project.</p>
+                                    <p class="card-text text-center">
+                                        <a href="https://codepen.io/Muhammed-Ahmet-ekerci/pen/zYXezYd"
+                                            target="_blank">Codepen Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Yeni kartlar buraya eklenebilir -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/Projects/snowboarder.png" class="card-img-top"
+                                    alt="Project 5 Snow Boarder Game photo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">SNOW BOARDER GAME PROJECT</h5>
+                                    <p class="card-text text-center">2d Unity Game Project.</p>
+                                    <p class="card-text text-center">
+                                        <a href="https://github.com/muhammedahmetsekerci/SnowBoarder"
+                                            target="_blank">Github
+                                            Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/Projects/HMCOM TECHNOLOGY.png" class="card-img-top"
+                                    alt="Project 6 Employees-Company photo">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">EMPLOYEES-COMPANY PROJECT</h5>
+                                    <p class="card-text text-center">Employees Team Project Created with C#
+                                        Database.
+                                    </p>
+                                    <p class="card-text text-center">Project is being developed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!--COURSES IN PROGRESS-->
+    <section id="coursesprogress" class="mg20">
+        <h1 class="center titlestyle pd10" style="margin: 0;">COURSES IN PROGRESS</h1>
+        <div class="coursesprogress text-center container">
+            <div class="row" style="justify-content: center;">
+                <div class="card col-2 col-lg-4" style="width: 13rem;">
+                    <img src="./img/courses/cs50sql.png" class="card-img-top" alt="Course 1 CS50 SQL Course photo">
+                    <div class="card-body">
+                        <p class="card-text">CS50's Introduction to Databases with SQL.</p>
+                        <a href="https://github.com/muhammedahmetsekerci/CS50-SQL" target="_blank">Github</a>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 100%">%100</div>
+                    </div>
+                </div>
+                <div class="card col-2 col-lg-4" style="width: 13rem;">
+                    <img src="./img/courses/cs50x.png" class="card-img-top" alt="Course 2 CS50X Course photo">
+                    <div class="card-body">
+                        <p class="card-text">CS50's Introduction to Computer Science.</p>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 18%">%18</div>
+                    </div>
+                </div>
+                <div class="card col-2 col-lg-4" style="width: 13rem;">
+                    <img src="./img/courses/fullweb.jpg" class="card-img-top"
+                        alt="Course 3 The Complete 2024 Web Development Bootcamp Course photo">
+                    <div class="card-body">
+                        <p class="card-text">The Complete 2024 Web Development Bootcamp.</p>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 19%">%19</div>
+                    </div>
+                </div>
+                <div class="card col-2 col-lg-4" style="width: 13rem;">
+                    <img src="./img/courses/freecodecamplogo.png" class="card-img-top"
+                        alt="Course 4 Freecodecamp Responsive Web Design Course photo">
+                    <div class="card-body">
+                        <p class="card-text">Freecodecamp Responsive Web Design.</p>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 37%">%37</div>
+                    </div>
+                </div>
+                <div class="card col-2 col-lg-4" style="width: 13rem;">
+                    <img src="./img/courses/2dunity.png" class="card-img-top"
+                        alt="Course 5 Complete CSharp Unity Game Developer 2D Course photo">
+                    <div class="card-body">
+                        <p class="card-text">Complete C# Unity Game Developer 2D.</p>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 40%">%40</div>
+                    </div>
+                </div>
+                <div class="card col-2 col-lg-4" style="width: 13rem;">
+                    <img src="./img/courses/gitcourse.png" class="card-img-top"
+                        alt="Course 6 Version Controls: Git and GitHub Course photo">
+                    <div class="card-body">
+                        <p class="card-text">Version Controls: Git and GitHub.</p>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 100%">%100</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+<footer>
+    <div class="footer-content">
+        <p style="margin-top: 20px; margin-bottom: 0;">© 2024 MAS</p>
+    </div>
+</footer>
+
+</html>
